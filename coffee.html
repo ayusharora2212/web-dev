@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" type="text/css" href="./coffeestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="main-nav">
+        <h1 class="brand">
+            <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee masters logo"
+            class="logo">
+            Coffee Masters
+        </h1>
+    </nav>
+    <div class="page" >
+        <section class="order-box">
+            <h2 class="box-title">ITEMS</h2>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="gap1">
+                        <div class="sub-title">
+                            <div class="item-title">Cappucino</div>
+                            <div class="item-option">Light Foam</div>
+                        </div>
+                        <div class="item-price">$6.00</div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="gap2">
+                        <div class="sub-title">
+                            <div class="item-title">Cappucino</div>
+                            <div class="item-option">Almond Milk</div>
+                            <div class="item-option">Double Espresso Shot</div>
+                        </div>
+                        <div class="item-price">$8.00</div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="gap3">
+                        <div class="sub-title">
+                            <div class="item-title">Croissant</div>
+                            <div class="item-option">Buttery</div>
+                            <div class="item-option">Chocolate Filled</div>
+                        </div>
+                        <div class="item-price">$10.00</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="payment">
+            <div class="name-box box">
+                <h2 class="box-title">NAME</h2>
+                <div class="input-group">
+                    <label for="name" class="user-input-lab1">Name for order</label>
+                    <input type="text" class="user-input" id="name" placeholder="type here">
+                </div>
+            </div>
+            <div class="cc-box box">
+                <h2 class="box-title">PAYMENT</h2>
+                <div class="input-group">
+                    <label for="cc" class="user-input-lab1">Card Number</label>
+                    <input type="text" class="user-input" id="cc" placeholder="type here">
+                </div>
+                <div class="input-group">
+                    <label for="cvv" class="user-input-lab1">CVV Number</label>
+                    <input type="text" id="cvv" class="user-input short-input" placeholder="type here">
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <section class="total">
+        <table class="subtotal">
+            <tbody>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$24</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$1</td>
+                </tr>
+                <tr class="total-final">
+                    <td>Total:</td>
+                    <td>$25</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="checkout" type="button">Place Order</button>
+    </section>
+</body>
+</html>
